@@ -14,10 +14,11 @@ days=[31,28,31,30,31,30,31,31,30,31,30,31]
 
   end
 
-number1=day+days[month-1]
+number_day=0
 
-
-puts number1
+(0..month-1).each {|index| number_day += days[index]}
+number_day -= days[month-1] - day
+puts number_day
 
 
 

@@ -12,6 +12,6 @@ shop_list[name] = { price: price, quantity: quantity, total_price: price * quant
 end
 
 summ_chek = 0
-shop_list .each { |_key, value| summ_chek += value[:total_price] }
+shop_list .each { |key, value| summ_chek += value[:total_price] }
 p shop_list
 puts "Цена за все: #{summ_chek}"

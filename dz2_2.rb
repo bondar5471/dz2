@@ -1,6 +1,7 @@
-arr = (10..100).to_a
-
-while arr[0] <= 100
-  puts arr[0]
-  arr[0] += 5
+arr = []
+i = 10
+while i <= 100
+  arr << i
+  i += 5
 end
+p arr
